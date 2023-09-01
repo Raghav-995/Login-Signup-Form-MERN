@@ -1,0 +1,41 @@
+{
+  "name": "login-registeration-mern-stack",
+  "version": "1.0.0",
+  "description": "Simple Login And Signup Form",
+  "main": "index.js",
+  "dependencies": {
+
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1",
+    "mongodb-connection-string-url": "^2.6.0",
+    "mongoose": "^6.12.0",
+    "react-bootstrap": "^2.8.0"
+  },
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index",
+    "my-app": "npm start -prefix my-app",
+    "dev": "concurrently \"npm run server\" \"npm run my-app\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raghav-995/login-signup-page-Reactjs.git"
+  },
+  "keywords": [
+    "Reactjs"
+  ],
+  "author": "Raghav-995",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raghav-995/login-signup-page-Reactjs/issues"
+  },
+  "homepage": "https://github.com/Raghav-995/login-signup-page-Reactjs#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
