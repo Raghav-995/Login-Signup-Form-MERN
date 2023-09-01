@@ -73,14 +73,14 @@ app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("*", function(_, res) {
     res.sendFile(
-        path.join(__dirname, "../frontend/build/index.html"),
+        path.join(__dirname, "../my-app/src/index.html"),
         function (err) {
             if(err) {
                 res.status(500).send(err)
             }
         }
     )
-})ur code
+})
 
 app.listen(9002, () => {
   console.log("app started on port 9002");
