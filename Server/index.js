@@ -3,7 +3,13 @@ const cors = require('cors');
 const mongoose=require('mongoose');
 const app = express();
 
-app.use(cors());
+app.use(cors(
+  {
+  origin: ["https://login-signup-form-mer.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 mongoose.set('strictQuery', false);
