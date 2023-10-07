@@ -34,7 +34,7 @@ const handleChanges = (event) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'http://localhost:3001/register', {name, email, password,date,country,city,gender,phone})
+        axios.post( 'https://login-signup-backed.vercel.app/register', {name, email, password,date,country,city,gender,phone})
         .then(result => {
             console.log(result);
             if(result.data === "Already registered"){
