@@ -33,7 +33,7 @@ const handleChanges = (event) => {
   };
     const handleSubmit = (event) => {
         event.preventDefault();
-        
+        axios.defaults.withCredentials = true;
         axios.post( 'https://login-signup-backed.vercel.app/register', {name, email, password,date,country,city,gender,phone})
         .then(result => {
             console.log(result);
