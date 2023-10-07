@@ -169,7 +169,7 @@ const handleChanges = (event) => {
                                 placeholder="9951-123-123"
                                 className="form-control" 
                                 id="examplePhone1" 
-				value={phone}  pattern="^\d{4}-\d{3}-\d{4}$"
+				value={phone} 
                                 onChange={handleChange}
                                 required
                             />
