@@ -10,6 +10,11 @@ app.use(cors());
 
 mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
 
+app.get('/',(req,res) => {
+
+res.send("Server Successfully Connected to https://localhost:3001");
+})
+
 app.post('/register', (req, res)=>{
     // To post / insert data into database
 
