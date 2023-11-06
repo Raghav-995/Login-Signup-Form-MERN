@@ -1,9 +1,9 @@
 const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
-require('dotenv').config();
+
 const FormDataModel = require ('./models/FormData');
-const URL = process.env.Mongo_Url;
+
 
 const app = express();
 app.use(express.json());
@@ -15,7 +15,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect('mongodb://127.0.0.1:27017/myLoginrtegisterDb')
+mongoose.connect('mongodb+srv://raghavendrapathak0:Z6QKVTRm1B6GXszA@cluster0.a5duuyj.mongodb.net/?retryWrites=true&w=majority')
     .then(() => console.log("MongoDB connected successfully..."))
   .catch((err) => console.log(err));
 
