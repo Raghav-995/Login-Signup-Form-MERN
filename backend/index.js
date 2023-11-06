@@ -15,7 +15,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect('mongodb+srv://raghavendrapathak0:Z6QKVTRm1B6GXszA@cluster0.a5duuyj.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb://127.0.0.1:27017/myLoginrtegisterDb')
     .then(() => console.log("MongoDB connected successfully..."))
   .catch((err) => console.log(err));
 
