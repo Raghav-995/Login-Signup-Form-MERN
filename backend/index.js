@@ -1,6 +1,6 @@
 const cors = require('cors');
 const express = require('express');
-const mongoose = require('mongoose');
+
 
 const FormDataModel = require ('./models/FormData');
 
@@ -18,7 +18,6 @@ app.use(cors(
 mongoose.connect('mongodb+srv://raghavendrapathak0:Z6QKVTRm1B6GXszA@cluster0.a5duuyj.mongodb.net/?retryWrites=true&w=majority')
     .then(() => console.log("MongoDB connected successfully..."))
   .catch((err) => console.log(err));
-
 app.get('/',(req,res) => {
 
 res.send("Server Successfully Connected to https://localhost:3001");
