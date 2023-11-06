@@ -1,8 +1,9 @@
 const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
+require('dotenv').config()
 const FormDataModel = require ('./models/FormData');
-
+const URL = process.env.Mongo_Url;
 
 const app = express();
 app.use(express.json());
@@ -14,7 +15,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
+mongoose.connect(URL);
 
 app.get('/',(req,res) => {
 
