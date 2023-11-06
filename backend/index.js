@@ -15,7 +15,9 @@ app.use(cors(
     }
 ));
 
-mongoose.connect(URL);
+mongoose.connect(URL,{useNewUrlParser:true,useCreateIndex:true})
+    .then(() => console.log("MongoDB connected successfully..."))
+  .catch((err) => console.log(err));
 
 app.get('/',(req,res) => {
 
