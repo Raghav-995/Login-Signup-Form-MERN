@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         axios.defaults.withCredentials = true;
-        axios.post( 'https://login-signup-backed.vercel.app/login', {email, password})
+        axios.post( 'https://login-signup-backend.vercel.app/login', {email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Success"){
