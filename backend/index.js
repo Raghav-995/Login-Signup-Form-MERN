@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
-require('dotenv').config()
+require('dotenv').config();
 const FormDataModel = require ('./models/FormData');
 const URL = process.env.Mongo_Url;
 
