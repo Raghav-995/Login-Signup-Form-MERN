@@ -15,7 +15,7 @@ app.use(cors(
     }
 ));
 
-mongoose.connect(URL,{useNewUrlParser:true})
+mongoose.connect(URL)
     .then(() => console.log("MongoDB connected successfully..."))
   .catch((err) => console.log(err));
 
